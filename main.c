@@ -51,8 +51,8 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  fprintf(interface, "allow-hotplug %s\n", argv[1]);
-  fprintf(interface, "iface %s inet dhcp\n", argv[1]);
+  fprintf(interface, "allow-hotplug %s\n", interface_card);
+  fprintf(interface, "iface %s inet dhcp\n", interface_card);
 
   char ssid[255];
   char psk[255];
